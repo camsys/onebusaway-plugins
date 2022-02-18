@@ -58,14 +58,16 @@
     </scm>
 
   <distributionManagement>
-    <repository>
-      <id>releases-mvn-repo</id>
-      <url>http://build.staging.obanyc.com/archiva/repository/releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>snapshots-mvn-repo</id>
-      <url>http://build.staging.obanyc.com/archiva/repository/snapshots/</url>
-    </snapshotRepository>
+      <repository>
+          <id>releases-camsys-public-repo</id>
+          <name>Camsys Public Release Repo</name>
+          <url>s3://repo.camsys-apps.com/releases/</url>
+      </repository>
+      <snapshotRepository>
+          <id>snapshots-camsys-public-repo</id>
+          <name>Camsys Public Snapshot Repo</name>
+          <url>s3://repo.camsys-apps.com/snapshots/</url>
+      </snapshotRepository>
   </distributionManagement>
 
 </project>
